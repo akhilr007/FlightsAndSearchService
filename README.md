@@ -45,3 +45,11 @@ npx sequelize model:generate --name Airport --attributes name:String,address:Str
 for migration
 npx sequelize db:migrate
 ```
+
+
+```
+for seeding the data 
+npx sequelize seed:generate --name add-airplanes
+
+npx sequelize db:seed:all
+```
