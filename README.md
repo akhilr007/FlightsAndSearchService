@@ -38,3 +38,10 @@
 ### Airport -> id, name, address, city_id, created_at, updated_at
     Relationship -> city has many airports and airport belongs to a city (one to many).
 
+```
+for creating the airport model
+npx sequelize model:generate --name Airport --attributes name:String,address:String,cityId:integer
+
+for migration
+npx sequelize db:migrate
+```
