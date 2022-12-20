@@ -12,5 +12,6 @@ router.get("/city", CityController.getAll);
 router.post("/city/createCities", CityController.createMultiple);
 
 router.post("/flights", FlightController.create);
+router.get("/flights", FlightController.getAll);
 
 module.exports = router;
